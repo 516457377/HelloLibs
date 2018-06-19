@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:src="@drawable/ic_home" />
+
+        <TextClock
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:format12Hour="aa hh:mm"
+            android:format24Hour="aa hh:mm"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/c_input"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_selected"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:gravity="center"
+                android:paddingBottom="20dp"
+                android:text="@string/str_input"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/c_video"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/video_selected"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:paddingBottom="20dp"
+                android:text="@string/str_video"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/c_wifi"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/wifi_selected"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:paddingBottom="20dp"
+                android:text="@string/str_wifi"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/c_music"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_music_selected"
+            android:onClick="onClick"
+            android:text="@string/str_music" />
+
+        <TextView
+            android:id="@+id/c_aiqiyi"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:drawableTop="@drawable/ic_aiqiyi_selected"
+            android:onClick="onClick"
+            android:text="@string/str_aiqiyi" />
+
+        <TextView
+            android:id="@+id/c_app"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:drawableTop="@drawable/ic_app_selected"
+            android:onClick="onClick"
+            android:text="@string/str_app" />
+
+        <TextView
+            android:id="@+id/c_file"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:drawableTop="@drawable/ic_file_selected"
+            android:onClick="onClick"
+            android:text="@string/str_file" />
+
+        <TextView
+            android:id="@+id/c_setting"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:drawableTop="@drawable/ic_setting_selected"
+            android:onClick="onClick"
+            android:text="@string/str_setting" />
+
+    </LinearLayout>
+</LinearLayout>
